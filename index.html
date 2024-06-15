@@ -3,7 +3,6 @@
     <title>Windi Wulandari</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -13,7 +12,7 @@
       <a class="navbar-brand" href="#">
         <img src="image/logo-2.png" alt="Logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <button class="navbar-toggler hide-on-small-screens" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!--
@@ -30,14 +29,38 @@
           </li>
         </ul>
         -->
+        <!--
         <form class="d-flex">
-          <p id="demo" style="display:none; color:aliceblue;">Hello..welcome to my portofolio project!</p>
-       <button class="btn btn-outline-light" type="button" onclick="document.getElementById('demo').style.display='block'">Say hello</button>
-       
-        </form>
+          <button class="btn btn-light" type="button" id="popupButton">Say Hello</button>
+        </form>-->
+      <!-- Replace the form section with this modal button trigger -->
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Say Hello
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hello, welcome to my portfolio!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thank you for visiting. Feel free to explore my work and skills.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   </nav>
+
+  
+  
   <div class="container-fluid bg-light text-center a-1">
     <div class="row">
     <div class="col-sm-12">
@@ -46,22 +69,14 @@
   </div>
   </div>
 </div>
-
-  <div class="container p-5 text-center">
-    <div class="row">
-      <div class="col-sm-12">
-        <img src="image/it-girl-white.png">
-      </div>
+<div class="container d-1 text-center">
+  <div class="row">
+    <div class="col">
+      <img src="image/it-girl-white.png" class="img-fluid" alt="Responsive-image">
     </div>
   </div>
-  <!--<div class="container text-center">
-    <div class="row">
-      <div class="col-sm-12">
-        <hr>
-      </div>
-    </div>
-  </div>-->
-  <div class="container-fluid bg-light text-center">
+</div>
+  <div class="container-fluid bg-light text-center e-1">
     <div class="row">
       <div class="col-sm-12 a-2">
     <h1>Experience</h1>
@@ -72,120 +87,60 @@
   </div>
 </div>
 </div>
-  <div class="container mt-5 text-center">
-    <div class="row">
-      <div class="col-sm-4">
-    <div class="card-columns">
-        <!-- Project 1 
-        <div class="card">
-            <div class="card-body">
-                <img src="icon/front-end-programming.png">
-                <h5 class="card-title">Web Developer</h5>
-                <p class="card-text">I design a website to ensure the website fits with user experience and user interface</p><br>
-                <p><span style="color:blueviolet">The languages i speak:</span><br>HTML, CSS, bootstrap, PHP</p><br>
-                <p><span style="color:blueviolet">Dev Tools:</span>Google Colab<br>VS Code</p>
-            </div>
+</div>
+<div class="container c-1">
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <img src="icon/front-end-programming.png">
+          <h5 class="card-title">Web Developer</h5>
+          <p class="card-text">Making a responsive and interesting website</p>
+          <p><span style="color:blueviolet">Languages:</span><br> HTML, CSS, Bootstrap, PHP, Python, MySQL</p>
         </div>
       </div>
-      </div>-->
-        <!-- Project 2 
-        <div class="col-sm-4">
-        <div class="card">
-            <div class="card-body">
-                <img src="icon/assurance.png">
-                <h5 class="card-title">Quality assurance</h5>
-                <p class="card-text">I evaluate a website before it is published</p>
-                <p><span style="color:blueviolet">The method i use:</span><br>Black-Box Testing</p><br>
-                <p><span style="color:blueviolet">QA Tools:</span><br>Google Suites</p>
-                <a href="#" class="btn btn-primary">See my projects</a>
-            </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <img src="icon/assurance.png">
+          <h5 class="card-title">Quality Assurance</h5>
+          <p class="card-text">Testing a website to ensure the website aligns with the assignments</p>
+          <p><span style="color:blueviolet">Method:</span><br> Black-Box Testing</p>
         </div>
-      </div>-->
-        <!-- Project 3 
-        <div class="col-sm-4">
-        <div class="card">
-            <div class="card-body">
-                <img src="icon/class.png">
-                <h5 class="card-title">Coding Instructor</h5>
-                <p class="card-text">I do a instruction for whom people wanna learn about programming</p>
-                <p><span style="color:blueviolet">The material i teach:</span><br>Scratch, Roblox, Website, Python</p><br>
-                <p><span style="color:blueviolet">Dev Tools:</span><br>Scratch<br>VS Code<br>Google Colab</p>
-                <a href="https://automalog.com" class="btn btn-primary">Mentorship</a>
-            </div>
-        </div>
-      </div>-->
-
-      <div class="card-group a-4 d-flex justify-content-center">
-        <div class="card">
-          <div class="card-body">
-            <img src="icon/front-end-programming.png">
-            <h5 class="card-title">Web Developer</h5>
-            <p class="card-text">Making a renponsive and interesting website</p>
-            <p><span style="color:blueviolet">Languages:</span><br> HTML, CSS, Bootstrap, PHP, Python, MySQL</p>
-            <!--<p><span style="color:blue">Languages:</span></p>-->
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <img src="icon/assurance.png">
-            <h5 class="card-title">Quality assurance</h5>
-            <p class="card-text">Testing a website to ensure the website aligns with the assignments</p>
-            <p><span style="color:blueviolet">Method:</span><br> Black-Box Testing</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <img src="icon/class.png">
-            <h5 class="card-title">Coding Instructor</h5>
-            <p class="card-text">Giving and teaching materials about coding concept and programming language</p>
-            <p><span style="color:blueviolet">Material:</span><br> Scratch, Roblox, Web Development</p>
-          </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <img src="icon/class.png">
+          <h5 class="card-title">Coding Instructor</h5>
+          <p class="card-text">Giving and teaching materials about coding concept and programming language</p>
+          <p><span style="color:blueviolet">Material:</span><br> Scratch, Roblox, Web Development</p>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div><br>
-      <!--
-      <div class="card-group a-4">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-  </div>
-  </div>
-  </div>
-  </div>-->
-  <footer>
-  <div class="container-fluid bg-dark text-center text-white d-flex justify-content-center">
+</div> 
+  <br><br><br><br>
+  <div class="container-fluid text-center bg-dark text-white d-flex justify-content-center footer">
     <div class="row">
-      <div class="col-sm-12 a-3">
+      <div class="col-sm-12">
         <p>Author: Windi Wulandari<br>
           <a href="mailto:hege@example.com">winthy@gmail.com</a></p>
   </div>
 </div>
 </div>
-</footer>
+
+<script>
+  document.getElementById('popupButton').addEventListener('click', function() {
+    Swal.fire({
+      icon: 'success',
+      title: 'Hello!',
+      text: 'Welcome to my portfolio website!',
+      confirmButtonText: 'Close'
+    });
+  });
+</script>
 </body>
 </html>
